@@ -1,6 +1,6 @@
-# Clerk CLI Homebrew Tap
+# Clerk's Homebrew Tap
 
-Homebrew formulae for the [Clerk CLI](https://github.com/clerk/cli).
+Homebrew formulae for [Clerk](https://clerk.com) tools.
 
 ## Installation
 
