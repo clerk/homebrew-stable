@@ -17,3 +17,31 @@ jobs:
       - run: brew test-bot --only-cleanup-before
       - run: brew test-bot --only-setup
       - run: brew test-bot --only-tap-syntax
+
+  notify-failure:
+    needs: [test-bot]
+    if: failure()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Notify Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          curl -sfS -X POST -H 'Content-Type: application/json' \
+            "$SLACK_WEBHOOK_URL" \
+            -d "$(jq -nc \
+              --arg workflow "brew test-bot" \
+              --arg repo "$GITHUB_REPOSITORY" \
+              --arg sha "${GITHUB_SHA:0:7}" \
+              --arg actor "$GITHUB_ACTOR" \
+              --arg logs "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" \
+            '{
+              blocks: [{
+                type: "section",
+                text: {
+                  type: "mrkdwn",
+                  text: "*:red_circle: \($workflow) failed*\n*Repo:* `\($repo)`\n*Status:* `failure`\n*Commit:* `\($sha)`\n*Triggered by:* `\($actor)`\n*Run:* <\($logs)|View logs>"
+                }
+              }]
+            }')"
