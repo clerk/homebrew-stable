@@ -5,13 +5,9 @@ class Broken < Formula
   version "0.0.1"
   sha256 "0000000000000000000000000000000000000000000000000000000000000000"
 
-  # Missing license, bad sha256, invalid URL - should fail audit
   def install
     bin.install "broken"
   end
 
-  # rubocop:disable all
-  def some_bad_method( x,y )
-    x+y
-  end
+  this is not valid ruby at all !!!
 end
