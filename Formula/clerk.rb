@@ -1,28 +1,28 @@
 class Clerk < Formula
   desc "Command-line interface for Clerk"
   homepage "https://clerk.com"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/clerk/cli/releases/download/v1.2.0/homebrew-clerk-darwin-arm64.tar.gz"
-      sha256 "1d4ed6e04a783b4b37be0940121eba10f16e190a753d0d112ef8ef2b67b22055"
+      url "https://github.com/clerk/cli/releases/download/v1.3.0/homebrew-clerk-darwin-arm64.tar.gz"
+      sha256 "ffa2dafa0ff0779de2f3ca0679ec77e1087004f1b4d88a6e381473254d2e8993"
     end
     on_intel do
-      url "https://github.com/clerk/cli/releases/download/v1.2.0/homebrew-clerk-darwin-x64.tar.gz"
-      sha256 "a599168a891badfd249504abf7cf3695b1518aa6b19a88962c97b80d0ee3bbe6"
+      url "https://github.com/clerk/cli/releases/download/v1.3.0/homebrew-clerk-darwin-x64.tar.gz"
+      sha256 "6a9199180feb834508ffce772af39c53051317fceef3d091949bce2870dbe1ee"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/clerk/cli/releases/download/v1.2.0/homebrew-clerk-linux-arm64.tar.gz"
-      sha256 "791889906d0852438abe8c70cc913cad724fa912fff21fe1d410d20008322775"
+      url "https://github.com/clerk/cli/releases/download/v1.3.0/homebrew-clerk-linux-arm64.tar.gz"
+      sha256 "740b933b309252e318d630b2b87dff0af3d078415b9083602ad051230864d1db"
     end
     on_intel do
-      url "https://github.com/clerk/cli/releases/download/v1.2.0/homebrew-clerk-linux-x64.tar.gz"
-      sha256 "7ce36ec1c9755c3a3ae1411e642387dba509031c634a30b52e3561739c5b27cf"
+      url "https://github.com/clerk/cli/releases/download/v1.3.0/homebrew-clerk-linux-x64.tar.gz"
+      sha256 "3f3de8e3b6cac969a98f44a6635943aaf168743eaca585358bdaffc086b8487c"
     end
   end
 
