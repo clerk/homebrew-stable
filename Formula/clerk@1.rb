@@ -1,7 +1,6 @@
 class ClerkAT1 < Formula
   desc "Command-line interface for Clerk"
   homepage "https://clerk.com"
-  version "1.5.0"
   license "MIT"
   keg_only :versioned_formula
 
