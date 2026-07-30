@@ -1,7 +1,6 @@
 class Clerk < Formula
   desc "Command-line interface for Clerk"
   homepage "https://clerk.com"
-  version "2.3.1"
   license "MIT"
 
   on_macos do
