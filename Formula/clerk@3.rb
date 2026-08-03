@@ -1,7 +1,8 @@
-class Clerk < Formula
+class ClerkAT3 < Formula
   desc "Command-line interface for Clerk"
   homepage "https://clerk.com"
   license "MIT"
+  keg_only :versioned_formula
 
   on_macos do
     on_arm do
