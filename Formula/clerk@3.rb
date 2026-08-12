@@ -6,23 +6,23 @@ class ClerkAT3 < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/clerk/cli/releases/download/v3.0.1/homebrew-clerk-darwin-arm64.tar.gz"
-      sha256 "250ae45fb95f4f7047bf62ef47df0242f327b9436480439eb10a9ff4a9486315"
+      url "https://github.com/clerk/cli/releases/download/v3.1.0/homebrew-clerk-darwin-arm64.tar.gz"
+      sha256 "efcf2264266d870f23428c7b2e6dc02b44b8c816b9322a369666c84426ea22f6"
     end
     on_intel do
-      url "https://github.com/clerk/cli/releases/download/v3.0.1/homebrew-clerk-darwin-x64.tar.gz"
-      sha256 "ecaf8f1ffc719bac03420ad7bd6bcf9dcf108c3183d09b8d174471fd20b19d1c"
+      url "https://github.com/clerk/cli/releases/download/v3.1.0/homebrew-clerk-darwin-x64.tar.gz"
+      sha256 "84fe71b2598ecb98e72280cdefe9c21a659ada5376560cf4320d0f148b57a1c0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/clerk/cli/releases/download/v3.0.1/homebrew-clerk-linux-arm64.tar.gz"
-      sha256 "2781e827ccd5e2ed706837346c51bb2f6295a537c8d4ed1ede243ad01f767fc9"
+      url "https://github.com/clerk/cli/releases/download/v3.1.0/homebrew-clerk-linux-arm64.tar.gz"
+      sha256 "0dd9610c856f92d504cc49e86fd0a6488c0ce587e579dac1371f6accf010c133"
     end
     on_intel do
-      url "https://github.com/clerk/cli/releases/download/v3.0.1/homebrew-clerk-linux-x64.tar.gz"
-      sha256 "31610c2daa8cbecc15ab18346a40fe4d8d676ffa42c6aeb6d12b816d9aa1b592"
+      url "https://github.com/clerk/cli/releases/download/v3.1.0/homebrew-clerk-linux-x64.tar.gz"
+      sha256 "6d9d33c1998420995da5f332fbc85e4e5c2c0254a33bee21ec7626fc7c39b02a"
     end
   end
 
